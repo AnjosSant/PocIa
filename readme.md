@@ -2,7 +2,7 @@
 - **Feito por Marcelo**
 ## Descrição da Aplicação
 
-Este é um aplicativo de demonstração que combina detecção de mãos em tempo real com um chat simulado, utilizando o Custom vision (object detection). O aplicativo foi desenvolvido para mostrar como é possivel desenvolver diversas soluçÕes com essa ferramenta, desde um chat de libras ao que sua imaginação permitir
+Este é um aplicativo de demonstração que combina detecção de mãos em tempo real com um llm, utilizando o Custom vision (object detection) e o Gemini da google.  O aplicativo foi desenvolvido para mostrar como é possivel desenvolver diversas soluçÕes com essa ferramenta, desde um chat de libras ao que sua imaginação permitir
 
 ### Finalidade
 
@@ -15,8 +15,8 @@ A aplicação visa demonstrar:
 
 ### Funcionamento
 
-Quando uma mão é detectada com alta probabilidade pela câmera do computador, o aplicativo abre automaticamente uma janela de chat simulado. O usuário pode então enviar mensagens através do chat ou enviar um sinal de Oi em libra, que são respondidas por respostas simuladas geradas pelo próprio aplicativo.
-observação a unica mensagem que o aplicativo reconheçe é o Oi
+Quando uma mão é detectada com alta probabilidade pela câmera do computador, o aplicativo abre automaticamente uma janela de chat simulado. O usuário pode então enviar um sinal de Oi em libra, que são respondidas por respostas Dinamicas geradas pelo próprio Gemini.
+observação a unica mensagem que o Custom vision é o Oi
 
 ## Instruções de Uso
 
@@ -25,7 +25,7 @@ observação a unica mensagem que o aplicativo reconheçe é o Oi
 1. **Python**: Certifique-se de ter o Python instalado. Recomenda-se a versão 3.x.
 2. **Bibliotecas Python**: Instale as seguintes bibliotecas Python:
 ```bash
-pip install opencv-python-headless pillow requests
+pip install opencv-python-headless pillow requests google-generativeai
 ```
 
 ### Executando o Aplicativo
@@ -41,9 +41,8 @@ pip install opencv-python-headless pillow requests
 - A janela do aplicativo será aberta, mostrando a detecção em tempo real da câmera.
 - Clique no botão "Detectar Mãos" para iniciar a detecção de mãos.
 - Se uma mão for detectada com alta probabilidade, a janela de chat será aberta automaticamente.
-- No chat, você pode interagir digitando mensagens no campo de entrada e pressionando Enter para enviar.
 -Ao lado tem uma camera com a opção de enviar libras ao fazer o sinal de Oi e pressionar em enviar a mensagem sera enviada no chat.
-- O sistema gera respostas pre-definidas para a mensagem Oi.
+
 
 4. **Encerrando o Aplicativo**:
 - Feche a janela principal do aplicativo para encerrar a execução. Certifique-se de que todas as câmeras estão liberadas ao finalizar.
@@ -54,6 +53,7 @@ pip install opencv-python-headless pillow requests
 - **OpenCV**: Biblioteca de visão computacional utilizada para captura e processamento de vídeo.
 - **Tkinter**: Biblioteca padrão do Python para criação de interfaces gráficas.
 - **Azure Custom Vision**: Serviço de IA da Microsoft utilizado para detecção de objetos em imagens.
+- **Google Gemini**: Serviço de IA da Google para geração avançada de textos e diálogos e pesquisa.
 - **PIL (Pillow)**: Biblioteca para processamento de imagens.
 - **Requests**: Biblioteca para realizar requisições HTTP.
 
