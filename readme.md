@@ -10,7 +10,7 @@ A aplicação visa demonstrar:
 
 - **Detecção de Mãos**: Utiliza visão computacional para detectar mãos .
 - **Detecção de Sinais de Libras**: Utiliza visão computacional para detectar sinais de Libra .
-- **Interação via Chat**: Apresenta um chat simulado onde o usuário pode interagir através de mensagens digitadas.
+- **Interação via Chat**: Apresenta um chat simulado onde o usuário pode interagir através de sinais de libras.
 
 
 ### Funcionamento
