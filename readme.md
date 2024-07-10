@@ -23,9 +23,11 @@ observação a unica mensagem que o Custom vision é o Oi
 ### Requisitos
 
 1. **Python**: Certifique-se de ter o Python instalado. Recomenda-se a versão 3.x.
-2. **Bibliotecas Python**: Instale as seguintes bibliotecas Python:
+2. **Api Keys**: Certifique-se de criar um .env e definir as variaveis nescessarias.
+3. **Bibliotecas Python**: Instale as seguintes bibliotecas Python:
+   
 ```bash
-pip install opencv-python-headless pillow requests google-generativeai
+pip install opencv-python-headless pillow requests google-generativeai python-dotenv
 ```
 
 ### Executando o Aplicativo
