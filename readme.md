@@ -33,7 +33,18 @@ pip install opencv-python-headless pillow requests google-generativeai python-do
 ### Executando o Aplicativo
 
 1. **Baixar o Código**: Clone ou baixe o código-fonte do repositório.
-2. **Executar o Aplicativo**:
+2. **Definindo as apis keys**: crie um arquivo .env com essas variaveis
+   
+PREDICTION_KEY=
+ENDPOINT=
+PROJECT_ID=
+PUBLISHED_NAME=
+
+SECOND_PROJECT_ID=
+SECOND_PUBLISHED_NAME=
+
+GEMINI_API_KEY =
+4. **Executar o Aplicativo**:
 - Navegue até o diretório onde o arquivo Python `app.py` está localizado.
 - Execute o aplicativo Python:
   ```bash
